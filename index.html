@@ -1,43 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amiruddin's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Responsive Portfolio Website HTML CSS| CodingNepal</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1 id="greeting">Hello!</h1>
-            <p>MCA Student | Pondicherry University</p>
-            <p>Learning MERN Stack | Proficient in C++</p>
-            <button id="darkModeToggle">Toggle Dark Mode</button>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Portfolio.</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
         </div>
-    </header>
+      </ul>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
 
-    <main>
-        <section class="about">
-            <h2>About Me</h2>
-            <div class="profile">
-                <img src="images/photo.jpg" alt="Profile Photo">
-                <p>Hi! I'm Amiruddin, an MCA student at Pondicherry University with a passion for web development. I'm currently learning the MERN stack and sharpening my skills in C++.</p>
-            </div>
-        </section>
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Amiruddin Ansari</div>
+        <div class="text-three">Full Stack Developer</div>
+        <div class="text-four">Pondicherry University</div>
+      </div>
+      <div class="button">
+        <button>Hire Me</button>
+      </div>
+    </div>
+  </section>
 
-        <section class="links">
-            <h2>Find Me Online</h2>
-            <div class="social-links">
-                <a href="https://github.com/your-github" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
-            </div>
-        </section>
-    </main>
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="images/about.jpg" alt="" />
+        </div>
+        <div class="right">
+          <div class="topic">Development Is My Passion</div>
+          <p>
+            Hello! I'm a passionate MCA student with a deep interest in web development, DevOps, machine learning, and
+            artificial intelligence. I love building efficient and scalable applications, automating workflows, and
+            exploring the power of AI to solve real-world problems. Whether it's crafting seamless user experiences on
+            the web, optimizing deployment pipelines, or diving into data-driven insights, I'm always eager to learn and
+            experiment with cutting-edge technologies. Let's connect and create something amazing together! 🚀
+          </p>
+          <div class="button">
+            <button>Download CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Amiruddin. All rights reserved.</p>
-    </footer>
+  <!-- My Skill Section Start -->
+  <!-- Section Tag and Other Div will same where we need to put same CSS -->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>My Skills</span></div>
+      <div class="skills-details">
+        <div class="text">
+          <div class="topic">Skills Reflects Our Knowledge</div>
+          <p>
+            We believe that skills are more than just expertise—they are a reflection of our dedication, curiosity,and
+            passion for innovation. Our knowledge spans across cutting-edge technologies, enabling us to build
+            efficient, scalable, and intelligent solutions. From crafting seamless web experiences to optimizing
+            workflows with DevOps, and harnessing the power of AI and machine learning, we continuously push boundaries
+            to stay ahead in the ever-evolving tech landscape.
+          </p>
 
-    <script src="script.js"></script>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">HTML</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">CSS</div>
+            <div class="per">80%</div>
+          </div>
+          <div class="box">
+            <div class="topic">JavScript</div>
+            <div class="per">70%</div>
+          </div>
+          <div class="box">
+            <div class="topic">PHP</div>
+            <div class="per">60%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Services Section Start -->
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>My Services</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="topic">Web Devlopment</div>
+          <p>We build fast, responsive, and user-friendly websites with modern technologies, ensuring seamless
+            performance and scalability.</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="topic">Graphic Design</div>
+          <p>We create eye-catching and professional designs that enhance your brand identity, ensuring a lasting visual
+            impact</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="topic">Digital Marketing</div>
+          <p>We create data-driven marketing strategies to boost your online presence, drive engagement, and maximize
+            conversions.</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fab fa-android"></i>
+          </div>
+          <div class="topic">Icon Design</div>
+          <p>Minimal, creative, and impactful icons that enhance usability and brand identity with a unique visual
+            touch.</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-camera-retro"></i>
+          </div>
+          <div class="topic">Photography</div>
+          <p>Capturing moments with precision and creativity, our photography services bring stories to life through
+            stunning visuals.</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-tablet-alt"></i>
+          </div>
+          <div class="topic">Apps Devlopment</div>
+          <p>From intuitive UI to powerful functionality, we develop high-performance mobile and web apps that enhance
+            user experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+        <div class="topic">Have Any Project?</div>
+        <p>Got an idea? Let's turn it into reality! Whether it's a website, an app, a design concept, or a marketing
+          campaign, we're here to bring your vision to life with innovation and expertise.
+          <br>
+          Let's connect and create something extraordinary together!
+        </p>
+        <div class="button">
+          <button>Let's Chat</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section Start -->
+  <footer>
+    <div class="text">
+      <span>Created By <a href="#">CodingLab</a> | &#169; 2021 All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
