@@ -44,3 +44,13 @@ let navLinks = document.querySelectorAll(".menu li a");
 navLinks.forEach((link) => {
   link.addEventListener("click", hideNavMenu);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let chatButton = document.querySelector(".contact .button button");
+  if (chatButton) {
+      chatButton.addEventListener("click", function () {
+          window.location.href = "mailto:devamir121@gmail.com";
+      });
+  }
+});
+
